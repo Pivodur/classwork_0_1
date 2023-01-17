@@ -1,5 +1,4 @@
 $(function(){
-    var mixer = mixitup('.portfolio__content');
 
     $('.slider-blog__inner').slick(
         {
@@ -8,4 +7,10 @@ $(function(){
             nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-right.svg" alt="arrow right"></button>',
         }
     );
+
+    $('.menu__btn').on('click',function(){
+        $('.header__top-inner').toggleClass('header__top-inner--active');
+    });
+
+    var mixer = mixitup('.portfolio__content');
 });
